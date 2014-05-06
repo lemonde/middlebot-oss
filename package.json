@@ -1,0 +1,26 @@
+{
+  "name": "oss-middlewares",
+  "description": "middlewares to index using oss",
+  "version": "0.1.0",
+  "scripts": {
+    "test": "mocha test/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/lemonde/oss-middlewares.git"
+  },
+  "author": "Yannick Dominguez <yannick.dominguez@gmail.com>",
+  "main": "lib/index.js",
+  "dependencies": {
+    "lodash": "~2.4.1",
+    "checksum": "~0.1.1",
+    "underscore.string": "~2.3.3"
+  },
+  "devDependencies": {
+    "sinon": "~1.7.3",
+    "sinon-chai": "~2.4.0",
+    "chai-things": "~0.2.0",
+    "chai": "~1.7.2",
+    "mocha": "~1.13.0"
+  }
+}

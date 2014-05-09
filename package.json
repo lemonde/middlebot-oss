@@ -1,9 +1,9 @@
 {
   "name": "middlebot-oss",
   "description": "Open search server middleware.",
-  "version": "0.1.0",
+  "version": "0.0.0",
   "scripts": {
-    "test": "mocha test/ --recursive"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",

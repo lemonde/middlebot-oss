@@ -21,7 +21,7 @@ var app = middlebot();
 app.use(middlebotOss.create({ index: myIndex }));
 ```
 
-### create(options)
+### middlebotOss.create(options)
 
 Call the create method of the index with `res.body`.
 
@@ -29,7 +29,7 @@ Call the create method of the index with `res.body`.
 app.use(middlebotOss.create({ index: myIndex }));
 ```
 
-### destroy(options)
+### middlebotOss.destroy(options)
 
 Call the destroy method of the index with `res.query`.
 

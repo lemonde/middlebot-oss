@@ -22,5 +22,6 @@
     "chai-things": "~0.2.0",
     "chai": "~1.7.2",
     "mocha": "~1.13.0"
-  }
+  },
+  "license": "MIT"
 }

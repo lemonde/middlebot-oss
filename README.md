@@ -31,7 +31,7 @@ app.use(middlebotOss.create({ index: myIndex }));
 
 ### middlebotOss.destroy(options)
 
-Call the destroy method of the index with `res.query`.
+Call the destroy method of the index with `req.query`.
 
 ```js
 app.use(middlebotOss.destroy({ index: myIndex }));

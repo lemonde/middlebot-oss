@@ -8,7 +8,7 @@ Open search server middleware.
 ## Install
 
 ```
-npm install middlebot-oss
+npm install https://github.com/lemonde/middlebot-oss.git
 ```
 
 ## Usage

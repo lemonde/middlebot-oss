@@ -1,13 +1,13 @@
 {
-  "name": "oss-middlewares",
-  "description": "middlewares to index using oss",
+  "name": "middlebot-oss",
+  "description": "Open search server middleware.",
   "version": "0.1.0",
   "scripts": {
     "test": "mocha test/ --recursive"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/lemonde/oss-middlewares.git"
+    "url": "git://github.com/lemonde/middlebot-oss.git"
   },
   "author": "Yannick Dominguez <yannick.dominguez@gmail.com>",
   "main": "lib/index.js",

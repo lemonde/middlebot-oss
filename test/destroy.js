@@ -20,4 +20,21 @@ describe('OSS destroy middleware', function () {
       done();
     });
   });
+
+  it('should be possible to return custom data', function (done) {
+    var app = middlebot();
+
+    app.use(destroy({ index: index, data: dataFormatter }));
+    app.handle('default', { type: 'request' }, { type: 'result' }, function (err, req, res) {
+      if (err) return done(err);
+      expect(index.destroy).to.be.calledWith({ foo: 'bar' });
+      done();
+    });
+
+    function dataFormatter(req, res) {
+      expect(req.type).to.equal('request');
+      expect(res.type).to.equal('result');
+      return { foo: 'bar' };
+    }
+  });
 });

@@ -23,18 +23,44 @@ app.use(middlebotOss.create({ index: myIndex }));
 
 ### middlebotOss.create(options)
 
-Call the create method of the index with `res.body`.
+Call create method on the provided index.
+
+#### Options
+
+- `Index` index
+- `Function` data
+  - If these key is not provided, `res.body` will be used as data object. The function have `req` and `res` as arguments and must return a plain object. If `false` is returned, do nothing.
+
+#### Example
 
 ```js
-app.use(middlebotOss.create({ index: myIndex }));
+app.use(middlebotOss.create({
+  index: myIndex,
+  data: function (req, res) {
+    return res.body;
+  }
+}));
 ```
 
 ### middlebotOss.destroy(options)
 
-Call the destroy method of the index with `req.query`.
+Call destroy method on the provided index.
+
+#### Options
+
+- `Index` index
+- `Function` data
+  - If these key is not provided, `req.query` will be used as data object. The function have `req` and `res` as arguments and must return a plain object. If `false` is returned, do nothing.
+
+#### Example
 
 ```js
-app.use(middlebotOss.destroy({ index: myIndex }));
+app.use(middlebotOss.destroy({
+  index: myIndex,
+  data: function (req, res) {
+    return req.query;
+  }
+}));
 ```
 
 ## License
